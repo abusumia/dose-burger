@@ -15,7 +15,7 @@ database:dict = load_database("meat_burger.json")
 
 header = st.header("Meat Burgers")
 
-imageCarouselComponent = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent = components.declare_component("image-carousel-component", path="public")
 imageUrls = []
 imageUrls_chicken = []
 for q in database["items"]:
@@ -24,7 +24,7 @@ selectedImageUrl = imageCarouselComponent(imageUrls=imageUrls, height=200)
 
 database:dict = load_database("chicken_burger.json")
 header = st.header("Chicken Burgers")
-imageCarouselComponent_chiken = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_chiken = components.declare_component("image-carousel-component", path="public")
 for q in database["items"]:
     imageUrls_chicken.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="chiken",imageUrls=imageUrls_chicken, height=200)
@@ -34,7 +34,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="chiken",imageUrls=
 imageUrls_fries = []
 header = st.header("Chili Fries")
 database_chili:dict = load_database("chili_fries.json")
-imageCarouselComponent_fries = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_fries = components.declare_component("image-carousel-component", path="public")
 for q in database_chili["items"]:
     imageUrls_fries.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="fries",imageUrls=imageUrls_fries, height=200)
@@ -43,7 +43,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="fries",imageUrls=i
 imageUrls_fries = []
 header = st.header("Salads")
 database_chili:dict = load_database("salads.json")
-imageCarouselComponent_fries = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_fries = components.declare_component("image-carousel-component", path="public")
 for q in database_chili["items"]:
     imageUrls_fries.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="salads",imageUrls=imageUrls_fries, height=200)
@@ -52,7 +52,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="salads",imageUrls=
 imageUrls_health = []
 header = st.header("Healthy")
 database_healthy:dict = load_database("healthy.json")
-imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="public")
 for q in database_healthy["items"]:
     imageUrls_health.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="healthy",imageUrls=imageUrls_health, height=200)
@@ -61,7 +61,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="healthy",imageUrls
 imageUrls_health = []
 header = st.header("Apptigers")
 database_healthy:dict = load_database("apigers.json")
-imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="public")
 for q in database_healthy["items"]:
     imageUrls_health.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="appigers",imageUrls=imageUrls_health, height=200)
@@ -70,7 +70,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="appigers",imageUrl
 imageUrls_health = []
 header = st.header("Adds")
 database_healthy:dict = load_database("adds.json")
-imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="public")
 for q in database_healthy["items"]:
     imageUrls_health.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="adds",imageUrls=imageUrls_health, height=200)
@@ -79,7 +79,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="adds",imageUrls=im
 imageUrls_health = []
 header = st.header("Drinks")
 database_healthy:dict = load_database("drinks.json")
-imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="public")
 for q in database_healthy["items"]:
     imageUrls_health.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="drinks",imageUrls=imageUrls_health, height=200)
@@ -89,7 +89,7 @@ selectedImageUrl_chicken = imageCarouselComponent_chiken(key="drinks",imageUrls=
 imageUrls_health = []
 header = st.header("Sauces")
 database_healthy:dict = load_database("sauces.json")
-imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="frontend/public")
+imageCarouselComponent_healthy = components.declare_component("image-carousel-component", path="public")
 for q in database_healthy["items"]:
     imageUrls_health.append(q["img"])
 selectedImageUrl_chicken = imageCarouselComponent_chiken(key="sauces",imageUrls=imageUrls_health, height=200)
